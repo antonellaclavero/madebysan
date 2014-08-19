@@ -37,11 +37,24 @@ header img {
 	margin: 1em 0 2em 3em;
 }
 
+/*section works*/
+
+.works img {
+	max-height: 500px;
+	max-width: 400px;
+}
+
+
+
 /*footer*/
 
+.contact a {
+	display: block;
+}
 .contact a span {
 	display: none;
 }
+/*sprite svg*/
 
 .icon-dribbble,.icon-dribbble\:regular{background-image:url('icons/icons.svg');background-position:0 0;background-repeat:no-repeat}
 .icon-dribbble-dims{width:92px;height:92px}
