@@ -38,17 +38,20 @@ header img {
 }
 
 /*section works*/
-.works {
-  width: auto;
-  margin: 0 auto;
+
+.works section {
+	float: left;
+	overflow: auto;
 }
 .works li {
 	display: inline-block;
-	/*width: 25%;*/
+	margin-right: 0;
 }
 .works img {
-	max-height: 400px;
-	max-width: 300px;
+	position: relative;
+	height: 271px;
+	width: 359px;
+	max-width: 100%;
 }
 
 
@@ -61,13 +64,6 @@ header img {
 .contact a span {
 	display: none;
 }
+
 /*sprite svg*/
 
-.icon-dribbble,.icon-dribbble\:regular{background-image:url('icons/icons.svg');background-position:0 0;background-repeat:no-repeat}
-.icon-dribbble-dims{width:92px;height:92px}
-.icon-instagram,.icon-instagram\:regular{background-image:url('icons/icons.svg');background-position:0 -92px;background-repeat:no-repeat}
-.icon-instagram-dims{width:92px;height:92px}
-.icon-linkedin,.icon-linkedin\:regular{background-image:url('icons/icons.svg');background-position:0 -184px;background-repeat:no-repeat}
-.icon-linkedin-dims{width:92px;height:92px}
-.icon-twitter,.icon-twitter\:regular{background-image:url('icons/icons.svg');background-position:0 -276px;background-repeat:no-repeat}
-.icon-twitter-dims{width:92px;height:92px}
