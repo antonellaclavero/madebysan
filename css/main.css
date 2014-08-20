@@ -38,10 +38,17 @@ header img {
 }
 
 /*section works*/
-
+.works {
+  width: auto;
+  margin: 0 auto;
+}
+.works li {
+	display: inline-block;
+	/*width: 25%;*/
+}
 .works img {
-	max-height: 500px;
-	max-width: 400px;
+	max-height: 400px;
+	max-width: 300px;
 }
 
 
@@ -49,7 +56,7 @@ header img {
 /*footer*/
 
 .contact a {
-	display: block;
+	display: inline-block;
 }
 .contact a span {
 	display: none;
