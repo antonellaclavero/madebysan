@@ -37,6 +37,7 @@ header img {
 }
 
 /*section works*/
+
 .works ul {
 	overflow: auto;
 }
@@ -50,22 +51,24 @@ header img {
 	max-width: 100%;
 }
 
-
-
 /*footer*/
 
-/*.contact p {
+.e-mail p {
 	display: inline-block;
 	margin-left: 0.5em;
-}*/
+	margin: 0 auto;
+}
+.e-mail a {
+	color: #e84c3d;
+	font-weight: bold;
+}
 .contact a span {
 	display: none;
 }
 
 /*sprite social icons*/
-
 .contact {
-  text-align: center;
+	text-align: right;
 }
 .contact li {
   display: inline-block;
