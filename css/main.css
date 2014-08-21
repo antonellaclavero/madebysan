@@ -39,18 +39,13 @@ header img {
 
 /*section works*/
 
-.works section {
-	float: left;
-	overflow: auto;
-}
 .works li {
 	display: inline-block;
 	margin-right: 0;
 }
 .works img {
-	position: relative;
 	height: 271px;
-	width: 359px;
+	width: 356px;
 	max-width: 100%;
 }
 
@@ -65,5 +60,5 @@ header img {
 	display: none;
 }
 
-/*sprite svg*/
+/*sprite png*/
 
