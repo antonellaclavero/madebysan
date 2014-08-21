@@ -18,7 +18,7 @@ a {
 	text-decoration: none;
 }
 p {
-	font-size: 1.25em;
+	font-size: 1.2em;
 	color: #606060;
 	line-height: 1.7em;
 	margin: 1em 2em 1.5em;
@@ -26,7 +26,6 @@ p {
 a {
 	color: #e84c3d;
 	font-weight: bold;
-
 }
 
 /*header*/
@@ -38,14 +37,16 @@ header img {
 }
 
 /*section works*/
-
+.works ul {
+	overflow: auto;
+}
 .works li {
 	display: inline-block;
-	margin-right: 0;
+	margin: -0.2em;
 }
 .works img {
-	height: 271px;
-	width: 356px;
+	height: 292px;
+	width: 362px;
 	max-width: 100%;
 }
 
@@ -55,6 +56,7 @@ header img {
 
 .contact a {
 	display: inline-block;
+	margin-left: 0.5em;
 }
 .contact a span {
 	display: none;
