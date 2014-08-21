@@ -46,7 +46,7 @@ header img {
 }
 .works img {
 	height: 292px;
-	width: 362px;
+	width: 360px;
 	max-width: 100%;
 }
 
@@ -54,13 +54,40 @@ header img {
 
 /*footer*/
 
-.contact a {
+/*.contact p {
 	display: inline-block;
 	margin-left: 0.5em;
-}
+}*/
 .contact a span {
 	display: none;
 }
 
-/*sprite png*/
+/*sprite social icons*/
 
+.contact {
+  text-align: center;
+}
+.contact li {
+  display: inline-block;
+}
+.contact a {
+  background: url("../images/result.png");
+  width: 40px;
+  height: 40px;
+  display: block;
+  color: #bbbbbb;
+  margin-right: 1em;
+  float: right;
+}
+.contact a.icon-twitter {
+	background-position: 0px 0px;
+}
+.contact a.icon-dribbble {
+	background-position: 0px -50px;
+}
+.contact a.icon-instagram {
+	background-position: 0px -100px;
+}
+.contact a.icon-linkedin {
+	background-position: 0px -150px;
+}
