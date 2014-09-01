@@ -47,7 +47,7 @@ header img {
 }
 .works img {
 	height: 292px;
-	width: 360px;
+	width: 362px;
 	max-width: 100%;
 }
 
@@ -93,4 +93,7 @@ header img {
 }
 .contact a.icon-linkedin {
 	background-position: 0px -150px;
+}
+.contact a:hover.icon-twitter {
+	color: red;
 }
