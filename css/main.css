@@ -50,6 +50,9 @@ header img {
 	width: 362px;
 	max-width: 100%;
 }
+.works h1 span {
+	display: none;
+}
 
 /*footer*/
 
@@ -58,7 +61,7 @@ header img {
 	margin-left: 0.5em;
 	margin: 0 auto;
 }
-.e-mail a {
+.contact .mailto a {
 	color: #e84c3d;
 	font-weight: bold;
 }
@@ -67,6 +70,7 @@ header img {
 }
 
 /*sprite social icons*/
+
 .contact {
 	text-align: right;
 }
