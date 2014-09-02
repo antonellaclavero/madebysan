@@ -4,8 +4,7 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 
 /*layout*/
 
-header,
-.main-footer {
+header {
 	padding: 150px 16%;
 } 
 
@@ -56,10 +55,12 @@ header img {
 
 /*footer*/
 
-.e-mail p {
+.main-footer {
+	padding: 4em 10%;
+}
+.e-mail {
 	display: inline-block;
 	margin-left: 0.5em;
-	margin-top: 2em;
 }
 .contact a span {
 	display: none;
@@ -69,6 +70,7 @@ header img {
 
 .contact {
 	text-align: right;
+	margin-top: -4.5em;
 }
 .contact li {
   display: inline-block;
