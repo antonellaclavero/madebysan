@@ -46,7 +46,7 @@ header img {
 }
 .works img {
 	height: 292px;
-	width: 362px;
+	width: 363px;
 	max-width: 100%;
 }
 .works h1 span {
@@ -61,6 +61,9 @@ header img {
 .e-mail {
 	display: inline-block;
 	margin-left: 6.5em;
+}
+.e-mail a {
+	margin-left: 0.5em;
 }
 .contact a span {
 	display: none;
@@ -96,3 +99,17 @@ header img {
 .contact a.icon-linkedin {
 	background-position: 0px -150px;
 }
+
+/*media queries*/
+@media screen and (max-width: 1280px) {
+  .screen-shot section header {
+    height: 7em;
+  }
+}
+@media screen and (max-width: 960px) {
+  .screen-shot section {
+    margin-right: 0;
+    width: 100%;
+    float: none;
+  }
+
