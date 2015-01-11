@@ -36,8 +36,9 @@ header img {
 }
 
 /*section works*/
+
 .works {
-width: 100%;
+max-width: 100%;
 }
 .works ul {
 	overflow: auto;
@@ -91,6 +92,9 @@ width: 100%;
 .contact a.icon-twitter {
 	background-position: 0px 0px;
 }
+.icon-twitter a:hover {
+	color: #55acee;
+}
 .contact a.icon-dribbble {
 	background-position: 0px -50px;
 }
@@ -103,18 +107,31 @@ width: 100%;
 
 /*media queries*/
 
-@media screen and (max-width: 1280px) {
-  .screen-shot section header {
-    height: 7em;
+@media screen and (max-width: 1436px) {
+  .works li img {
+  	width: 33.3%;
+  	max-width: 359px;
+  	max-height: 292px;  
   }
 }
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 1430px) {
   .works li img {
-    margin-right: 0;
-    width: 100%;
-    float: none;
+  	width: 33.3%;
+  	max-width: 400px;
+  	max-height: 300px;  
   }
-  #projects img {
-	opacity: 1.0;
+}
+@media screen and (max-width: 718px) {
+  .works li img {
+  	width: 50%;
+  	max-width: 359px;
+  	max-height: 292px;  
+  }
+}
+@media screen and (max-width: 451px) {
+  .works li img {
+  	width: 100%;
+  	max-width: 451px;
+  	max-height: 292px; 
   }
 }
