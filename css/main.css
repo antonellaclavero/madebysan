@@ -107,20 +107,28 @@ max-width: 100%;
 
 /*media queries*/
 
-@media screen and (max-width: 1436px) {
+@media screen and (min-width: 1436px) {
   .works li img {
   	width: 33.3%;
   	max-width: 359px;
   	max-height: 292px;  
   }
 }
-@media screen and (max-width: 1430px) {
+@media screen and (max-width: 1401px) {
+  .works li img {
+  	width: 25%;
+  	max-width: 400px;
+  	max-height: 300px;  
+  }
+}
+@media screen and (max-width: 1400px) {
   .works li img {
   	width: 33.3%;
   	max-width: 400px;
   	max-height: 300px;  
   }
 }
+
 @media screen and (max-width: 718px) {
   .works li img {
   	width: 50%;
