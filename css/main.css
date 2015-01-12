@@ -81,8 +81,11 @@ header img {
 	font-size: 40px;
 	display: block;
 	color: #bbbbbb;
-	margin-right: 1em;
+	margin-right: 0.5em;
 	float: right;
+}
+.contact a.icon-linkedin2 {
+	font-size: 44px;
 }
 .contact a.icon-twitter:hover {
 	color: #55acee;
