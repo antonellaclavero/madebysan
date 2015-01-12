@@ -131,5 +131,8 @@ header img {
 	.works li img {
 		width: 100%;
 	}
+	.contact {
+		text-align: center;
+	}
 }
 
