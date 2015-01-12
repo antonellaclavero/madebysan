@@ -78,28 +78,23 @@ header img {
 	display: inline-block;
 }
 .contact a {
-	background: url("../images/result.png");
-	width: 40px;
-	height: 40px;
+	font-size: 40px;
 	display: block;
 	color: #bbbbbb;
 	margin-right: 1em;
 	float: right;
 }
-.contact a.icon-twitter {
-	background-position: 0px 0px;
-}
-.contact a.icon-dribbble {
-	background-position: 0px -50px;
-}
-.contact a.icon-instagram {
-	background-position: 0px -100px;
-}
-.contact a.icon-linkedin {
-	background-position: 0px -150px;
-}
-.contact a:hover .icon-twitter {
+.contact a.icon-twitter:hover {
 	color: #55acee;
+}
+.contact a.icon-dribbble:hover {
+	color: #ea4c89;
+}
+.contact a.icon-instagram:hover {
+	color: #3f729b;
+}
+.contact a.icon-linkedin2:hover {
+	color: #0976b4;
 }
 
 /*media queries*/
