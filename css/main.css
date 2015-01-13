@@ -105,13 +105,6 @@ header img {
 	.works li img {
 		width: 33%;
 	}
-	.contact {
-		text-align: center;
-		margin: 1em 0 0 1.5em;
-	}
-	.e-mail {
-		text-align: center;
-	}
   	.e-mail {
   		margin-left: 1em;
   	}
@@ -120,26 +113,41 @@ header img {
   	}
   	p {
   		margin: 0 0 1em 0;
+  		line-height: 1.2em;
   	}
   	header img {
     	margin: 1em 0 2em 0em;
+  	}
+  	.contact {
+  		margin: 0;
   	}
 }
 @media screen and (max-width: 700px) {
 	.works li img {
 		width: 50%;
 	}
-	.contact {
-		text-align: center;
-		margin: 1em 0 0 1.5em;
+	header {
+		padding: 100px 16%;
 	}
-	.e-mail {
-		text-align: center;
+	p {
+		line-height: 1.2em;
 	}
 }
 @media screen and (max-width: 450px) {
 	.works li img {
 		width: 100%;
+	}
+	header {
+		padding: 100px 16%;
+	} 
+	header img {
+		float: none;
+		display: block;
+		margin: 0 auto 2em;
+	}
+	p {
+		text-align: center;
+		line-height: 1.2em
 	}
 	.contact {
 		text-align: center;
