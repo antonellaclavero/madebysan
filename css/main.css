@@ -113,7 +113,9 @@ header img {
   	}
   	p {
   		margin: 0 0 1em 0;
-  		line-height: 1.2em;
+  	}
+  	header p {
+  		line-height: 1.5em;
   	}
   	header img {
     	margin: 1em 0 2em 0em;
@@ -129,8 +131,8 @@ header img {
 	header {
 		padding: 100px 16%;
 	}
-	p {
-		line-height: 1.2em;
+	header p {
+		line-height: 1.5em;
 	}
 }
 @media screen and (max-width: 450px) {
@@ -147,7 +149,9 @@ header img {
 	}
 	p {
 		text-align: center;
-		line-height: 1.2em
+	}
+	header p {
+		line-height: 1.5em
 	}
 	.contact {
 		text-align: center;
