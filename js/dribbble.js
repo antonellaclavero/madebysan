@@ -20,3 +20,21 @@ var getAllDribbbleProjects = function() {
 }
 
 projects = JSON.parse(getAllDribbbleProjects().responseText);
+portfolioContainer = document.getElementById('portfolio');
+
+projects.forEach(function(project) {
+    projectContainer = document.createElement('li');
+    projectContainer.classList.add('hidden');
+
+    var link = document.createElement('a');
+    link.setAttribute('target', '_blank');
+    link.setAttribute('href', project.html_url);
+    projectContainer.appendChild(link);
+
+    var img = document.createElement('img');
+    img.setAttribute('alt', project.title);
+    img.setAttribute('src', project.images.hidpi);
+    link.appendChild(img);
+
+    portfolioContainer.appendChild(projectContainer)
+});

@@ -35,6 +35,10 @@ header img {
 }
 /*section works*/
 
+.hidden {
+  display: none;
+}
+
 .works {
 	max-width: 100%;
 }
