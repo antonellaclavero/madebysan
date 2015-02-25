@@ -9,6 +9,7 @@ var getDribbbleProjects = function(page, firstRun) {
     )
 
     r.setRequestHeader('Authorization', 'Bearer ' + ACCESS_TOKEN)
+    r.setRequestHeader('Origin', 'http://antonellaclavero.github.io')
 
     r.onreadystatechange = function() {
         if (r.readyState == 4) {
