@@ -1,23 +1,3 @@
-var getDribbbleProjects = function(p) {
-    var r = new XMLHttpRequest();
-
-    r.open(
-        'GET',
-        'https://api.dribbble.com/v1/users/sntaln/shots?callback=handleNewDribbbleData&per_page=8&page=' + p
-    )
-
-    r.setRequestHeader('Authorization', 'Bearer ' + ACCESS_TOKEN)
-
-    r.onreadystatechange = function() {
-        if (r.readyState == 4) {
-            eval(r.responseText);
-        }
-    };
-
-    r.send();
-    return r
-}
-
 var renderDribbbleProjects = function(response) {
     response.data.forEach(function(project) {
         var projectContainer = document.createElement('li');
@@ -38,7 +18,7 @@ var renderDribbbleProjects = function(response) {
 
 var handleExtraDribbbleProjects = function(response) {
     nonVisibleProjects = response.data.splice(8, response.data.length);
-    setTimeout(cyclePortfolio, 4000);
+    setInterval(cyclePortfolio, 4000);
 }
 
 var cyclePortfolio = function() {
@@ -56,8 +36,6 @@ var cyclePortfolio = function() {
     visibleProject.children[0].href = invisibleProject.html_url
     visibleProject.children[0].children[0].alt = invisibleProject.title
     visibleProject.children[0].children[0].src = invisibleProject.images.hidpi || invisibleProject.images.normal || invisibleProject.images.teaser
-
-    setTimeout(cyclePortfolio, 4000);
 }
 
 // Set global vars
