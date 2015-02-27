@@ -18,31 +18,27 @@ var getDribbbleProjects = function(p) {
     return r
 }
 
-var handleNewDribbbleData = function(response) {
-    if (page == 1) {
-        response.data.forEach(function(project) {
-            var projectContainer = document.createElement('li');
+var renderDribbbleProjects = function(response) {
+    response.data.forEach(function(project) {
+        var projectContainer = document.createElement('li');
 
-            var link = document.createElement('a');
-            link.setAttribute('target', '_blank');
-            link.setAttribute('href', project.html_url);
-            projectContainer.appendChild(link);
+        var link = document.createElement('a');
+        link.setAttribute('target', '_blank');
+        link.setAttribute('href', project.html_url);
+        projectContainer.appendChild(link);
 
-            var img = document.createElement('img');
-            img.setAttribute('alt', project.title);
-            img.setAttribute('src', project.images.hidpi || project.images.normal || project.images.teaser);
-            link.appendChild(img);
+        var img = document.createElement('img');
+        img.setAttribute('alt', project.title);
+        img.setAttribute('src', project.images.hidpi || project.images.normal || project.images.teaser);
+        link.appendChild(img);
 
-            portfolioContainer.appendChild(projectContainer);
-            getDribbbleProjects(++page);
-        });
-    } else {
-        if (response.data.length > 0) {
-            nonVisibleProjects = nonVisibleProjects.concat(response.data);
-            getDribbbleProjects(++page);
-        }
-    }
+        portfolioContainer.appendChild(projectContainer);
+    });
+}
 
+var handleExtraDribbbleProjects = function(response) {
+    nonVisibleProjects = response.data.splice(8, response.data.length);
+    setTimeout(cyclePortfolio, 4000);
 }
 
 var cyclePortfolio = function() {
@@ -68,8 +64,3 @@ var cyclePortfolio = function() {
 ACCESS_TOKEN = 'd5ee97865d20bbb01a40f59237a843feb5acb6276c240815dc0bada9dacdcc25';
 portfolioContainer = document.getElementById('portfolio');
 nonVisibleProjects = [];
-page = 1;
-
-// Start getting data, rendering, cycling the portfolio, generally living la vida loca.
-getDribbbleProjects(page)
-setTimeout(cyclePortfolio, 4000);
