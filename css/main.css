@@ -15,6 +15,7 @@ h1 {
     font-size: 28pt;
     line-height: 30pt;
     font-weight: 300;
+    margin: 0.5em 0;
 }
 p {
 	font-size: 14pt;
@@ -37,11 +38,11 @@ header img {
 	margin: 1em 0 2em 2.5em;
 }
 
-/*content*/
+/*about*/
 
 div.content-about {
     padding: 0 16% 113px; 
-    letter-spacing: 0.4px;  
+    letter-spacing: 0.3px;  
 }
 div.content-about p {
     margin: 0 0 2em 0;
