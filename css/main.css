@@ -37,7 +37,7 @@ header img {
 	height: 40px;
 	margin: 1em 0 2em 2.5em;
 }
-h1.line-before:before {
+h1.horizontal-line:before {
     content: "— ";
     color: #444;
     font-size: 26pt;
@@ -60,8 +60,7 @@ div.content-about p {
 div.content-about p.contact {
     margin: 0;
 }
-
-a.line-before:before {
+a.horizontal-line:before {
     content: "— ";
     color: #444;
     font-size: 15pt;
@@ -69,6 +68,14 @@ a.line-before:before {
     position: relative;
     font-weight: 200;
 }
+a:hover {
+    text-decoration: line-through;
+    font-weight: 200;
+}
+a.mailto:hover {
+    text-decoration: none;
+}
+
 /*section works*/
 
 .hidden {
