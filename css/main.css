@@ -69,11 +69,11 @@ div.content-about p.contact {
   margin: 0;
 }
 a.horizontal-line {
-  font-size: 13pt;
-  line-height: 13pt;
+  font-size: 15pt;
+  line-height: 15pt;
 }
 a.horizontal-line:before {
-  font-size: 13pt;
+  font-size: 15pt;
   top: 0;
   position: relative;
 }
