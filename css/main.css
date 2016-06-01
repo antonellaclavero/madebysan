@@ -74,7 +74,7 @@ a.horizontal-line {
 }
 a.horizontal-line:before {
   font-size: 15pt;
-  top: 0;
+  top: 0; 
   position: relative;
 }
 a:hover {
@@ -115,21 +115,6 @@ a.mailto:hover {
 	.works li img {
 		width: 33%;
 	}
-  .e-mail {
-  	margin-left: 1em;
-  }
-  .e-mail a {
-  	margin-left: 0;
-  }
-  p {
-  	margin: 0 0 1em 0;
-  }
-  header p {
-  	line-height: 1.5em;
-  }
-  header img {
-    margin: 1em 0 2em 0em;
-  }
   .contact {
   	margin: 1em 0em 0 0;
   }
@@ -154,9 +139,6 @@ a.mailto:hover {
   }
 	.contact {
 		margin: 1em 0 0 1.5em;
-	}
-	.e-mail {
-		text-align: center;
 	}
 }
 
