@@ -39,6 +39,5 @@ var cyclePortfolio = function() {
 }
 
 // Set global vars
-ACCESS_TOKEN = 'd5ee97865d20bbb01a40f59237a843feb5acb6276c240815dc0bada9dacdcc25';
 portfolioContainer = document.getElementById('portfolio');
 nonVisibleProjects = [];
